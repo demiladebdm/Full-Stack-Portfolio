@@ -45,7 +45,7 @@ const Banner = () => {
         }, delta)
 
         return () => clearInterval(ticker)
-    }, [text])
+    })
 
 
   return (
