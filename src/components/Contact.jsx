@@ -16,8 +16,6 @@ const Contact = () => {
   }
 
   const [formDetails, setFormDetails ] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -25,28 +23,6 @@ const Contact = () => {
       [category]: value
     })
   }
-
-  const handleSubmit = async (e) => {
-    e.prevent.Default();
-    
-    setButtonText('Sending...');
-    let response = await fetch("http://localhost:5000/contact", {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(formDetails)
-    });
-    setButtonText('Send');
-    let result = response.json();
-    setFormDetails(formInitialDetails);
-
-    if(result.code === 200) {
-      setStatus({ success: true, message: 'Message sent successfully' });
-    } else {
-      setStatus({ success: false, message: 'Something went wrong, please try again later' });
-    }
-  }
-  
 
 
   return (
@@ -58,7 +34,7 @@ const Contact = () => {
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
-            <form onSubmit={handleSubmit}>
+            <form action="https://getform.io/f/ff64c9d1-b01b-4dbe-8d2a-a66ba59aaf60" method='POST'>
               <Row>
                 <Col sm={6} className='px-1'>
                   <input type="text" value={formDetails.firstName} placeholder='First Name' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -74,14 +50,8 @@ const Contact = () => {
                 </Col>
                 <Col  className='px-1'>
                   <textarea row='6' value={formDetails.message} placeholder='Message' onChange={(e) => onFormUpdate('message', e.target.value)} />
-                  <button type='submit'><span>{buttonText}</span></button>
+                  <button type='submit'><span>Let's talk</span></button>
                 </Col>
-                {
-                  status.message && 
-                  <Col>
-                    <p className={status.sucess === false ? 'danger' : 'success'}>{status.message}</p>
-                  </Col>
-                }
               </Row>
             </form>
           </Col>
