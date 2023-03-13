@@ -453,7 +453,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-bottom: 0.1px solid #B8B8B8;
   background-color: rgb(255 255 255 / 10%);
   padding: 0.5em 0;
+  margin: 10px 0;
   width: 60% !important;
+  border-radius: 20px;
+  box-shadow: inset 0 -3em 3em rgba(64, 64, 64, 0.1), 0 0 0 2px rgb(255, 255, 255),
+      0.3em 0.3em 1em rgba(204, 203, 203, 0.2);
 }
 .tabTwoRow {
   display: flex;
