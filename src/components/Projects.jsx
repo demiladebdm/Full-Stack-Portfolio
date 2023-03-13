@@ -27,32 +27,44 @@ const Projects = () => {
         {
             title: 'Amazon Clone',
             description: 'Full stack e-commerce website',
-            imageUrl: proj1
+            imageUrl: proj1,
+            webLink: '/',
+            gitHubLink: '/'
         },
         {
             title: 'Musica',
             description: 'Music Player with react',
-            imageUrl: proj2
+            imageUrl: proj2,
+            webLink: '/',
+            gitHubLink: '/'
         },
         {
             title: 'Todo List',
             description: 'Todo List with React',
-            imageUrl: proj3
+            imageUrl: proj3,
+            webLink: '/',
+            gitHubLink: '/'
         },
         {
             title: 'Robo Friends',
             description: 'A web site used to generate and fetch different robots',
-            imageUrl: proj4
+            imageUrl: proj4,
+            webLink: '/',
+            gitHubLink: '/'
         },
         {
             title: 'Tic-Tac-Toe',
             description: 'A simple Tic-Tac-To game with react',
-            imageUrl: proj5
+            imageUrl: proj5,
+            webLink: '/',
+            gitHubLink: '/'
         },
         {
             title: 'useState()',
             description: 'useState Hook with react',
-            imageUrl: proj6
+            imageUrl: proj6,
+            webLink: '/',
+            gitHubLink: '/'
         },
         // {
         //     title: 'Projects 7',
@@ -65,6 +77,8 @@ const Projects = () => {
         //     imageUrl: projImg2
         // }
     ]
+
+
 
   return (
     <div className='project' id='project'>
@@ -106,8 +120,48 @@ const Projects = () => {
                                 }
                             </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey='second'>Loren Ipsum</Tab.Pane>
-                        <Tab.Pane eventKey='third'>Loren Ipsum</Tab.Pane>
+                        <Tab.Pane eventKey='second'>
+                            <Row className='tabTwoRow'>
+                                <h2 style={{ fontSize: '24px'}}>Click on the Project Name to view the project on Web</h2><br /><br />
+                                {
+                                    projects.map(({ title, description, webLink }) => {
+                                        return (
+                                            <div className='tabTwo'>
+                                                <a href={webLink}>
+                                                    <Col>
+                                                        <span className='headTitle'>{title}</span>
+                                                    </Col>
+                                                    <Col>
+                                                        <span className='bodyTitle'>{description}</span>
+                                                    </Col>
+                                                </a>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </Row>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey='third'>
+                            <Row className='tabTwoRow'>
+                                <h2 style={{ fontSize: '24px'}}>Click on the Project Name to view the project code on GitHub</h2><br /><br />
+                                {
+                                    projects.map(({ title, description, gitHubLink }) => {
+                                        return (
+                                            <div className='tabTwo'>
+                                                <a href={gitHubLink}>
+                                                    <Col>
+                                                        <span className='headTitle'>{title}</span>
+                                                    </Col>
+                                                    <Col>
+                                                        {/* <span className='bodyTitle'>{description}</span> */}
+                                                    </Col>
+                                                </a>
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </Row>
+                        </Tab.Pane>
                     </Tab.Content>
                 </Tab.Container>
             </Col>
