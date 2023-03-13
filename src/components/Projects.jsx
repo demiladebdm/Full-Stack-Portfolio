@@ -82,13 +82,13 @@ const Projects = () => {
                 <Tab.Container id='projects-tabs' defaultActiveKey='first'>
                     <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                         <Nav.Item class="nav-item">
-                            <Nav.Link class="nav-link active" aria-current="page" eventKey={"first"} >Tab One</Nav.Link>
+                            <Nav.Link class="nav-link active" aria-current="page" eventKey={"first"} >Tab 1</Nav.Link>
                         </Nav.Item>
                         <Nav.Item class="nav-item">
-                            <Nav.Link class="nav-link" eventKey={"second"}>Tab Two</Nav.Link>
+                            <Nav.Link class="nav-link" eventKey={"second"}>Tab 2</Nav.Link>
                         </Nav.Item>
                         <Nav.Item class="nav-item">
-                            <Nav.Link class="nav-link" eventKey={"third"}>Tab Three</Nav.Link>
+                            <Nav.Link class="nav-link" eventKey={"third"}>Tab 3</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content>
