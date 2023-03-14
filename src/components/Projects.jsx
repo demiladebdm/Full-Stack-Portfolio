@@ -28,53 +28,50 @@ const Projects = () => {
             title: 'Amazon Clone',
             description: 'Full stack e-commerce website',
             imageUrl: proj1,
-            webLink: '/',
-            gitHubLink: '/'
+            webLink: 'https://clone-5ed93.web.app/',
+            gitHubLink: 'https://github.com/demiladebdm/amazon-clone.git'
         },
         {
             title: 'Musica',
             description: 'Music Player with react',
             imageUrl: proj2,
-            webLink: '/',
-            gitHubLink: '/'
+            webLink: '#',
+            gitHubLink: '#'
         },
         {
             title: 'Todo List',
             description: 'Todo List with React',
             imageUrl: proj3,
-            webLink: '/',
-            gitHubLink: '/'
+            webLink: 'https://dof-todo.netlify.app/',
+            gitHubLink: 'https://github.com/demiladebdm/React-todo/tree/main'
         },
         {
             title: 'Robo Friends',
             description: 'A web site used to generate and fetch different robots',
             imageUrl: proj4,
-            webLink: '/',
-            gitHubLink: '/'
+            webLink: 'https://daddydof-robofriends-app.netlify.app',
+            gitHubLink: 'https://github.com/demiladebdm/robofriends/tree/main'
         },
         {
             title: 'Tic-Tac-Toe',
             description: 'A simple Tic-Tac-To game with react',
             imageUrl: proj5,
-            webLink: '/',
-            gitHubLink: '/'
+            webLink: 'https://dof-tic-tac-toe.netlify.app/',
+            gitHubLink: 'https://github.com/demiladebdm/Tic-Tac-Toe/tree/master'
         },
         {
             title: 'useState()',
             description: 'useState Hook with react',
             imageUrl: proj6,
-            webLink: '/',
-            gitHubLink: '/'
+            webLink: '#',
+            gitHubLink: '#'
         },
         // {
-        //     title: 'Projects 7',
-        //     description: 'Design & Development',
-        //     imageUrl: projImg1
-        // },
-        // {
-        //     title: 'Projects 8',
-        //     description: 'Design & Development',
-        //     imageUrl: projImg2
+        //     title: 'Workout App',
+        //     description: 'A full stack workout web app',
+        //     imageUrl: proj7,
+        //     webLink: '#',
+        //     gitHubLink: 'https://github.com/demiladebdm/Full-Stack-Workout-App.git'
         // }
     ]
 

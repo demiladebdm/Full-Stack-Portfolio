@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
-import logo from '../assets/img/logo.svg';
+// import logo from '../assets/img/logo.svg';
+// import logo2 from '../assets/img/logo2.svg';
+// import download from '../assets/img/download.svg';
 import linkedin from '../assets/img/linkedin.svg';
 import github from '../assets/img/github.svg';
 import gmail from '../assets/img/gmail.svg';
@@ -40,7 +42,8 @@ const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">            
-            <img src={logo} alt="Logo" />
+            {/* <img className="imageLogo" src={logo2} alt="Logo" /> */}
+            <h1 className="headerName">DaddyDof</h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
